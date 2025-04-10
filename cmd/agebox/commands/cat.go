@@ -113,9 +113,9 @@ func (a allDebugLogger) WithValues(kv log.Kv) log.Logger {
 }
 
 func (a allDebugLogger) Infof(format string, args ...interface{}) {
-	a.Logger.Debugf(format, args...)
+	a.Debugf(format, args...)
 }
 
 func (a allDebugLogger) Warningf(format string, args ...interface{}) {
-	a.Logger.Debugf(format, args...)
+	a.Debugf(format, args...)
 }
