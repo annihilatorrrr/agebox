@@ -1,7 +1,7 @@
-FROM golang:1.23
+FROM golang:1.24
 
-ARG GOLANGCI_LINT_VERSION="1.61.0"
-ARG MOCKERY_VERSION="2.46.2"
+ARG GOLANGCI_LINT_VERSION="2.0.2"
+ARG MOCKERY_VERSION="2.53.3"
 ARG ostype=Linux
 
 RUN apt-get update && apt-get install -y \
